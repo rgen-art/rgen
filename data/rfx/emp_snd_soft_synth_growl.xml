@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::snd::soft_synth_c" name="Growl" quality="emp_snd_quality_00.xml">
+ <functions __count="5">
+  <i expression="left,right">
+   <inputs __count="2">
+    <i function="1" index="0" value="0"/>
+    <i function="1" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="square(time, 12)*e">
+   <inputs __count="2">
+    <i function="3" index="0" value="0"/>
+    <i function="2" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="envelope()">
+   <inputs __count="0"/>
+   <params __count="5">0.0321411 -0.0488094 0 1 0.1442042 0.9586 0 1 0.2984077 0.5757961 0 1 0.4416136 0.0138004 0 1 0.8988112 0 0 1</params>
+  </i>
+  <i expression="time*frequency*0.125+e">
+   <inputs __count="3">
+    <i function="4294967295" index="4294967295" value="0"/>
+    <i function="4294967295" index="4294967295" value="0"/>
+    <i function="4" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="sin(2pi*time)">
+   <inputs __count="1">
+    <i function="4294967295" index="4294967295" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+ </functions>
+ <info __count="5">
+  <i scale="0.08" scale_x="1" scale_y="1" expand_input="1" expand_output="0" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="1.1906166" y="-0.9837388"/>
+   <size x="0.4" y="0.8148492"/>
+   <function_size x="0" y="0"/>
+  </i>
+  <i scale="0.08" scale_x="1" scale_y="1" expand_input="1" expand_output="1" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="0.748117" y="-0.5037386"/>
+   <size x="0.7124997" y="0.6193297"/>
+   <function_size x="0" y="0"/>
+  </i>
+  <i scale="0.1725273" scale_x="1" scale_y="1" expand_input="0" expand_output="1" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="0.088117" y="-0.8762375"/>
+   <size x="0.52" y="0.3526049"/>
+   <function_size x="0" y="0"/>
+  </i>
+  <i scale="0.08" scale_x="1" scale_y="1" expand_input="1" expand_output="0" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="0.553117" y="-0.0462389"/>
+   <size x="0.5550001" y="0.8034491"/>
+   <function_size x="0" y="0"/>
+  </i>
+  <i scale="0.08" scale_x="1" scale_y="1" expand_input="1" expand_output="0" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="0.143117" y="-0.4087388"/>
+   <size x="0.46" y="0.6382381"/>
+   <function_size x="0" y="0"/>
+  </i>
+ </info>
+</__object>

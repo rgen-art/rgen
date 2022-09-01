@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::snd::soft_synth_c" name="Noise" quality="emp_snd_quality_00.xml">
+ <functions __count="3">
+  <i expression="random()*e">
+   <inputs __count="1">
+    <i function="2" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="left,right">
+   <inputs __count="2">
+    <i function="0" index="0" value="0"/>
+    <i function="0" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="envelope()">
+   <inputs __count="0"/>
+   <params __count="5">0 0 0 1 0.02 1 0 1 0.05 0.7 0 1 0.7215977 -0.0189182 0 1 2 0 0 1</params>
+  </i>
+ </functions>
+ <info __count="3">
+  <i scale="0.0505394" scale_x="1" scale_y="1" expand_input="1" expand_output="1" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="0.0231167" y="-0.0262387"/>
+   <size x="0.6075021" y="0.4352103"/>
+   <function_size x="0" y="0"/>
+  </i>
+  <i scale="1" scale_x="1" scale_y="0.1547236" expand_input="1" expand_output="0" show_input="0" show_output="1" show_current="1" log_x="0" log_y="0">
+   <position x="1.8006165" y="-0.0987371"/>
+   <size x="1.4190004" y="1.231635"/>
+   <function_size x="0.6810002" y="0.3999999"/>
+  </i>
+  <i scale="0.8329721" scale_x="0.4134094" scale_y="0.3550087" expand_input="0" expand_output="1" show_input="0" show_output="1" show_current="1" log_x="0" log_y="0">
+   <position x="0.3631167" y="-1.6312383"/>
+   <size x="1.694" y="0.9724188"/>
+   <function_size x="0.8185" y="0.4"/>
+  </i>
+ </info>
+</__object>

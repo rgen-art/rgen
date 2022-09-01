@@ -1,0 +1,243 @@
+//-----------------------------------------------------------------------------
+// rgen.art
+//-----------------------------------------------------------------------------
+#ifndef EMP_PP_ITERATION_DEF
+#define EMP_PP_ITERATION_DEF
+
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+#include "emp_pp_iterate.h"
+
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+#ifndef EMP_PP_ITERATION_COUNT
+#error EMP_PP_ITERATION_COUNT not defined
+#endif
+
+#ifndef EMP_PP_ITERATION_FILE
+#error EMP_PP_ITERATION_FILE not defined
+#endif
+
+#ifdef EMP_PP_ITERATION_FILE_UNDEF
+#error EMP_PP_ITERATION_FILE_UNDEF not defined
+#endif
+
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+#if EMP_PP_ITERATION_COUNT > 0
+#define EMP_PP_ITERATION_INDEX 0
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 1
+#define EMP_PP_ITERATION_INDEX 1
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 2
+#define EMP_PP_ITERATION_INDEX 2
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 3
+#define EMP_PP_ITERATION_INDEX 3
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 4
+#define EMP_PP_ITERATION_INDEX 4
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 5
+#define EMP_PP_ITERATION_INDEX 5
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 6
+#define EMP_PP_ITERATION_INDEX 6
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 7
+#define EMP_PP_ITERATION_INDEX 7
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 8
+#define EMP_PP_ITERATION_INDEX 8
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 9
+#define EMP_PP_ITERATION_INDEX 9
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 10
+#define EMP_PP_ITERATION_INDEX 10
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 11
+#define EMP_PP_ITERATION_INDEX 11
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 12
+#define EMP_PP_ITERATION_INDEX 12
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 13
+#define EMP_PP_ITERATION_INDEX 13
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 14
+#define EMP_PP_ITERATION_INDEX 14
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 15
+#define EMP_PP_ITERATION_INDEX 15
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 16
+#define EMP_PP_ITERATION_INDEX 16
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 17
+#define EMP_PP_ITERATION_INDEX 17
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 18
+#define EMP_PP_ITERATION_INDEX 18
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 19
+#define EMP_PP_ITERATION_INDEX 19
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 20
+#define EMP_PP_ITERATION_INDEX 20
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 21
+#define EMP_PP_ITERATION_INDEX 21
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 22
+#define EMP_PP_ITERATION_INDEX 22
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 23
+#define EMP_PP_ITERATION_INDEX 23
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 24
+#define EMP_PP_ITERATION_INDEX 24
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 25
+#define EMP_PP_ITERATION_INDEX 25
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 26
+#define EMP_PP_ITERATION_INDEX 26
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 27
+#define EMP_PP_ITERATION_INDEX 27
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 28
+#define EMP_PP_ITERATION_INDEX 28
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 29
+#define EMP_PP_ITERATION_INDEX 29
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 30
+#define EMP_PP_ITERATION_INDEX 30
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 31
+#define EMP_PP_ITERATION_INDEX 31
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_INDEX
+#endif
+
+#if EMP_PP_ITERATION_COUNT > 32
+#error EMP_PP_ERROR_EMP_PP_ITERATION_COUNT_OVERFLOW
+#endif
+
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+#define EMP_PP_ITERATION_UNDEF
+#include EMP_PP_ITERATION_FILE()
+#undef EMP_PP_ITERATION_UNDEF
+
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+#undef EMP_PP_ITERATION_FILE
+#undef EMP_PP_ITERATION_INDEX
+#undef EMP_PP_ITERATION_COUNT
+#undef EMP_PP_ITERATION_UNDEF
+
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+#endif
+
+//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
+#undef EMP_PP_ITERATION_DEF
+

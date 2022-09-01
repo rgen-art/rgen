@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="ase::cor::user_c" name="rgen" init_mod="ase_mod_rgen.xml">
+ <options scaling="1.1" skin="emp_gui_skin_data_dark.xml" locale="emp_loc_locale_en_US.xml">
+  <evolution left="256" max="256" consumed="59906">
+   <mutation>
+    <literal active="1" count="23" base="4" scale="8" offset="0"/>
+    <variant active="1" count="27" base="0" scale="8" offset="0"/>
+    <call active="1" count="31" base="1" scale="8" offset="0"/>
+    <data active="1" count="8" base="0" scale="1" offset="0.3"/>
+    <trailing active="1" count="27" base="0" scale="1" offset="0.3"/>
+   </mutation>
+   <crossover active="1" count="8" base="0" offset="0" xfather="1" xmother="1"/>
+  </evolution>
+  <emphase mod="Easy" bpm="128" shuffle="0">
+   <score visible="1" letters="1" durations="1" scale="1" time_scale="0.2695313"/>
+   <keyboard visible="1" letters="1" scale="1" mapping="ase_cor_mapping_dvorak.xml" layout="emp_snd_soft_synth_trump.xml" snd_scale="emp_snd_scale_chromatic.xml"/>
+  </emphase>
+  <selection pool="ase_cor_pool_roots.xml" pools="ase_cor_pool_list_rgen.xml" gallery_width="10" edition="1"/>
+ </options>
+</__object>

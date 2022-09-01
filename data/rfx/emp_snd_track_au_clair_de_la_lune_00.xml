@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::snd::track_c" name="Au clair de la lune 00" beat_duration="521739" scale="emp_snd_scale_chromatic.xml" layout="emp_snd_soft_synth_trump.xml" loop="0">
+ <notes __count="44">
+  <i index="22" time="0" duration="489130"/>
+  <i index="22" time="521739" duration="489130"/>
+  <i index="22" time="1043478" duration="489130"/>
+  <i index="24" time="1565217" duration="489130"/>
+  <i index="26" time="2086956" duration="1010869"/>
+  <i index="24" time="3130434" duration="1010869"/>
+  <i index="22" time="4173913" duration="489130"/>
+  <i index="26" time="4695652" duration="489130"/>
+  <i index="24" time="5217391" duration="489130"/>
+  <i index="24" time="5739130" duration="489130"/>
+  <i index="22" time="6260869" duration="1532608"/>
+  <i index="22" time="8347825" duration="489130"/>
+  <i index="22" time="8869565" duration="489130"/>
+  <i index="22" time="9391304" duration="489130"/>
+  <i index="24" time="9913043" duration="489130"/>
+  <i index="26" time="10434782" duration="1010869"/>
+  <i index="24" time="11478260" duration="1010869"/>
+  <i index="22" time="12521738" duration="489130"/>
+  <i index="26" time="13043477" duration="1010869"/>
+  <i index="24" time="14086955" duration="489130"/>
+  <i index="24" time="14608694" duration="489130"/>
+  <i index="22" time="15130433" duration="1532608"/>
+  <i index="24" time="17217390" duration="489130"/>
+  <i index="24" time="17739130" duration="489130"/>
+  <i index="24" time="18260870" duration="489130"/>
+  <i index="24" time="18782610" duration="489130"/>
+  <i index="19" time="19304350" duration="1010869"/>
+  <i index="19" time="20347828" duration="1010869"/>
+  <i index="24" time="21391306" duration="489130"/>
+  <i index="22" time="21913046" duration="489130"/>
+  <i index="21" time="22434786" duration="489130"/>
+  <i index="19" time="22956526" duration="489130"/>
+  <i index="17" time="23478266" duration="1532608"/>
+  <i index="22" time="25565222" duration="489130"/>
+  <i index="22" time="26086962" duration="489130"/>
+  <i index="22" time="26608702" duration="489130"/>
+  <i index="24" time="27130442" duration="489130"/>
+  <i index="26" time="27652182" duration="1010869"/>
+  <i index="24" time="28695660" duration="1010869"/>
+  <i index="22" time="29739138" duration="489130"/>
+  <i index="26" time="30260878" duration="489130"/>
+  <i index="24" time="30782618" duration="489130"/>
+  <i index="24" time="31304358" duration="489130"/>
+  <i index="22" time="31826098" duration="1532608"/>
+ </notes>
+</__object>

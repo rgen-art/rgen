@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::snd::soft_synth_c" name="Harlem" quality="emp_snd_quality_00.xml">
+ <functions __count="6">
+  <i expression="left,right">
+   <inputs __count="2">
+    <i function="3" index="0" value="0"/>
+    <i function="3" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="envelope()">
+   <inputs __count="0"/>
+   <params __count="4">0 0 0 1 -0.0000567 1.2729626 0 1 0.3215281 0.108414 0 1 0.5013154 -0.0007711 0 1</params>
+  </i>
+  <i expression="envelope()">
+   <inputs __count="0"/>
+   <params __count="7">0 0 0 1 0.024259 0.9787847 0 1 0.1489775 0.9777098 0 1 0.5031346 0.9875042 0 1 0.954607 1.0039703 0 1 1.4384619 0.9759004 0 1 1.8621665 0.0569973 0 1</params>
+  </i>
+  <i expression="signal*env">
+   <inputs __count="2">
+    <i function="4" index="0" value="0"/>
+    <i function="1" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="sawtooth(time,12)">
+   <inputs __count="1">
+    <i function="5" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="time*frequency*0.125*e">
+   <inputs __count="3">
+    <i function="4294967295" index="4294967295" value="0"/>
+    <i function="4294967295" index="4294967295" value="0"/>
+    <i function="2" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+ </functions>
+ <info __count="6">
+  <i scale="1" scale_x="1" scale_y="1" expand_input="1" expand_output="0" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="1.1431167" y="-0.7862381"/>
+   <size x="0.4" y="0.8148492"/>
+   <function_size x="0" y="0"/>
+  </i>
+  <i scale="0.0537139" scale_x="17.9474678" scale_y="1" expand_input="0" expand_output="1" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="0.7981168" y="-0.3237386"/>
+   <size x="0.8325" y="0.3526049"/>
+   <function_size x="0.8010001" y="0.3999999"/>
+  </i>
+  <i scale="0.1445976" scale_x="1.0212134" scale_y="1" expand_input="0" expand_output="1" show_input="0" show_output="1" show_current="1" log_x="0" log_y="0">
+   <position x="0.0681167" y="-0.718739"/>
+   <size x="2.1089973" y="0.9724188"/>
+   <function_size x="1.0259986" y="0.4"/>
+  </i>
+  <i scale="1" scale_x="1" scale_y="1" expand_input="1" expand_output="0" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="1.2181165" y="-0.0412387"/>
+   <size x="0.4" y="0.7208436"/>
+   <function_size x="0" y="0"/>
+  </i>
+  <i scale="1" scale_x="1" scale_y="1" expand_input="1" expand_output="1" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="0.7181166" y="-0.0437387"/>
+   <size x="0.48" y="0.5367242"/>
+   <function_size x="0" y="0"/>
+  </i>
+  <i scale="1" scale_x="1" scale_y="1" expand_input="0" expand_output="0" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="0.0781167" y="-0.1612388"/>
+   <size x="0.59" y="0.8034491"/>
+   <function_size x="0" y="0"/>
+  </i>
+ </info>
+</__object>

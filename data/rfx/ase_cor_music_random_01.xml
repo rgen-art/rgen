@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="ase::cor::random_music_c" name="Au hasard (difficile)" beat_per_minute="128" max_touches="1" max_left_touches="1" max_right_touches="1" max_duration="60" full_time="1">
+ <performance>
+  <buckets __count="2">
+   <i>
+    <options mod="Easy" shuffle="0" score_visible="1" score_letters="1" score_durations="1" keyboard_visible="1" keyboard_letters="1"/>
+    <data __count="17">
+     <i user="ase_cor_user_rgen.xml" score="76.5625" time="69327856" success="88.28125" failure="11.718751"/>
+     <i user="ase_cor_user_rgen.xml" score="96.875" time="77446049" success="98.4375" failure="1.5625"/>
+     <i user="ase_cor_user_rgen.xml" score="0.7812488" time="3500465" success="1.5625" failure="0.7812488"/>
+     <i user="ase_cor_user_rgen.xml" score="84.375" time="84246347" success="92.1874924" failure="7.8125"/>
+     <i user="ase_cor_user_rgen.xml" score="75" time="77662225" success="87.5" failure="12.5"/>
+     <i user="ase_cor_user_rgen.xml" score="17.96875" time="18518996" success="19.53125" failure="1.5625"/>
+     <i user="ase_cor_user_rgen.xml" score="93.7499924" time="67043997" success="96.875" failure="3.125"/>
+     <i user="ase_cor_user_rgen.xml" score="-0.781249" time="3748612" success="0" failure="0.781249"/>
+     <i user="ase_cor_user_rgen.xml" score="0.781249" time="4334119" success="1.5625" failure="0.781249"/>
+     <i user="ase_cor_user_rgen.xml" score="5.46875" time="9484792" success="7.8125" failure="2.34375"/>
+     <i user="ase_cor_user_rgen.xml" score="93.7499924" time="65610087" success="96.875" failure="3.125"/>
+     <i user="ase_cor_user_rgen.xml" score="1.5625" time="3483551" success="2.34375" failure="0.781249"/>
+     <i user="ase_cor_user_rgen.xml" score="90.625" time="65009946" success="95.3125076" failure="4.6875"/>
+     <i user="ase_cor_user_rgen.xml" score="89.0625" time="62175904" success="94.5312576" failure="5.46875"/>
+     <i user="ase_cor_user_rgen.xml" score="90.625" time="66442911" success="95.3125076" failure="4.6875"/>
+     <i user="ase_cor_user_rgen.xml" score="96.875" time="63108339" success="98.4375" failure="1.5625"/>
+     <i user="ase_cor_user_rgen.xml" score="100" time="66577630" success="100" failure="0"/>
+    </data>
+   </i>
+   <i>
+    <options mod="Normal" shuffle="0" score_visible="1" score_letters="1" score_durations="1" keyboard_visible="1" keyboard_letters="1"/>
+    <data __count="1">
+     <i user="ase_cor_user_rgen.xml" score="39.0008278" time="61706247" success="51.5625" failure="12.5616693"/>
+    </data>
+   </i>
+  </buckets>
+  <user_data __count="1">
+   <i user="ase_cor_user_rgen.xml" played="18" rating="0"/>
+  </user_data>
+ </performance>
+</__object>

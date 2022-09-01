@@ -1,0 +1,77 @@
+@__primitives_per_image uint=207041;
+@__scale_y float=0.01481;
+@__scale_x float=0.01481;
+@__origin_y float=-40.256195;
+@__origin_x float=38.791218;
+@__clear_brightness float=0.030541;
+@__clear_saturation float=0.513859;
+@__clear_hue float=71.21154;
+@__seed uint=2206226013;
+@main=
+{
+    {
+        t(.175, .7);
+        loop (6)
+        {
+            s(.975);
+            loop (10)
+            {
+                gen0;
+                t(1.1, 0);
+                r(2);
+                hsba(36, 0, 0, 0);
+            }
+        }
+    }
+    r(20);
+    hsba(0, .2, .2, 0);
+}
+@gen0=
+{
+    {
+        hsba(1, 1, .1, 0);
+    }
+    loop (32)
+    {
+        {
+            t(0, 1.1);
+            hsba(1, 342, 1, 0);
+            gen1;
+        }
+        {
+            hsba(200, 1, 11, 0);
+        }
+        r(36);
+        hsba(0, 0, 0, -.03125);
+    }
+}
+@gen1 1=
+{
+    {
+        hsba(200, .5, 0, 0);
+        hsba(0, 0, 0, -.4);
+        s(5);
+        t(0, -10.);
+    }
+    {
+        s(.9975);
+        r(4);
+        hsba(0, 0, .005, 0);
+        gen1;
+    }
+}
+@gen1 1=
+{
+    {
+        t(20, .5);
+        s(1, 10);
+        circle;
+    }
+    {
+        s(.9975);
+        r(4);
+        t(0, 1.);
+        f(90);
+        gen1;
+    }
+}

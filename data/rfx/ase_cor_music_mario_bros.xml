@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="ase::cor::composition_music_c" compo="emp_snd_composition_mario_bros.xml">
+ <performance>
+  <buckets __count="2">
+   <i>
+    <options mod="Easy" shuffle="0" score_visible="1" score_letters="1" score_durations="1" keyboard_visible="1" keyboard_letters="1"/>
+    <data __count="5">
+     <i user="ase_cor_user_rgen.xml" score="96" time="24087003" success="98" failure="2"/>
+     <i user="ase_cor_user_rgen.xml" score="100.0000076" time="25586780" success="100.0000076" failure="0"/>
+     <i user="ase_cor_user_rgen.xml" score="75.3333435" time="20686601" success="87.6666718" failure="12.333334"/>
+     <i user="ase_cor_user_rgen.xml" score="87.3333435" time="21737223" success="93.6666718" failure="6.3333335"/>
+     <i user="ase_cor_user_rgen.xml" score="72.0000076" time="20919669" success="86.0000076" failure="14.000001"/>
+    </data>
+   </i>
+   <i>
+    <options mod="Normal" shuffle="0" score_visible="1" score_letters="1" score_durations="1" keyboard_visible="1" keyboard_letters="1"/>
+    <data __count="1">
+     <i user="ase_cor_user_rgen.xml" score="7.3295383" time="15862500" success="38.3333359" failure="31.0037975"/>
+    </data>
+   </i>
+  </buckets>
+  <user_data __count="1">
+   <i user="ase_cor_user_rgen.xml" played="6" rating="0"/>
+  </user_data>
+ </performance>
+</__object>

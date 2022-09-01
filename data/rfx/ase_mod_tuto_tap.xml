@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="ase::mod::text_c" duration="2" next="ase_mod_evolution.xml" prev="ase_mod_evolution.xml">
+ <label __name="mod_tuto_tap.label" alignment="MiddleCenter">
+  <skin name="lbl.h4"/>
+  <state visible="1" enable="1" hover="0" focus="0" select="0" check="0" navigable="0" focusable="1" renderable="1" index="0" dock="none">
+   <autosize x="1" y="1"/>
+  </state>
+  <controls __count="0"/>
+  <transform>
+   <position x="0.568467" y="-0.7873679"/>
+   <size x="4.491755" y="0.2326364"/>
+  </transform>
+ </label>
+ <window>
+  <skin name="wnd.main"/>
+  <state visible="0" enable="0" hover="1" focus="0" select="0" check="0" navigable="0" focusable="0" renderable="1" index="0" dock="none">
+   <autosize x="0" y="0"/>
+  </state>
+  <controls __count="1">
+   <i __type="emp::gui::button_c*">
+    <skin name=""/>
+    <state visible="1" enable="1" hover="1" focus="0" select="0" check="0" navigable="0" focusable="0" renderable="1" index="0" dock="Fill">
+     <autosize x="0" y="0"/>
+    </state>
+    <controls __count="1">
+     <i __pointer="mod_tuto_tap.label"/>
+    </controls>
+    <transform>
+     <position x="0.009375" y="-0.0117188"/>
+     <size x="1.98125" y="1.9765625"/>
+    </transform>
+   </i>
+  </controls>
+  <transform>
+   <position x="0" y="0"/>
+   <size x="2" y="2"/>
+  </transform>
+ </window>
+ <desc key="ase_mod_tuto_tap_desc" value=""/>
+ <name key="ase_mod_tuto_tap_name" value=""/>
+</__object>

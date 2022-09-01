@@ -1,0 +1,537 @@
+##-----------------------------------------------------------------------------
+## rgen.art
+##-----------------------------------------------------------------------------
+ARCH_DIRECTORY		?=  $(ARCH)/
+BUILD_DIRECTORY		?=  $(ARCH_DIRECTORY)$(BUILD)/
+OBJECT_DIRECTORY	?=  $(BUILD_DIRECTORY)obj/
+BINARY_DIRECTORY	?=  $(BUILD_DIRECTORY)bin/
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+OUTPUT		        ?=	$(join $(BINARY_DIRECTORY), $(BINARY))
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+LOCATIONS	        ?=	$(sort $(sort $(dir $(wildcard ../*/)))\
+                        	$(sort $(dir $(wildcard $(ROOT)*/))))
+
+CHECK_LOCATIONS     ?= ./ $(sort $(sort $(dir $(wildcard ../lib_*/)))\
+                            $(sort $(dir $(wildcard $(ROOT)lib_*/))))
+
+INCLUDE_LOCATIONS   ?=  $(INCLUDES) $(addprefix -I, $(LOCATIONS))
+
+VPATH		        ?=	$(addsuffix :, $(LOCATIONS))
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+ifeq ($(TARGET), all)
+SRC_CPP	?=	$(filter %.cpp, $(SOURCES))
+OBJ_CPP	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_CPP:.cpp=.o)))
+LNK_CPP ?=	$(wildcard $(OBJECT_DIRECTORY)*.o)
+DEP_CPP	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_CPP:.cpp=.d)))
+
+SRC_MM	?=	$(filter %.mm, $(SOURCES))
+OBJ_MM	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_MM:.mm=.o)))
+LNK_MM   ?=	$(wildcard $(OBJECT_DIRECTORY)*.o)
+DEP_MM	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_MM:.mm=.d)))
+
+SRC_C	?=	$(filter %., $(SOURCES))
+OBJ_C	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_C:.c=.o)))
+LNK_C   ?=	$(wildcard $(OBJECT_DIRECTORY)*.o)
+DEP_C	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_C:.c=.d)))
+
+$(info >>>>>>>>>>>>>>>>>>>>> SRC_CPP $(OBJ_CPP))
+
+$(info >>>>>>>>>>>>>>>>>>>>> SRC_CPP $(SRC_C))
+
+else
+ifeq ($(TARGET), check)
+else
+ifeq ($(TARGET), compile)
+SRC_H	?=	$(wildcard $(addsuffix *.h, $(LOCATIONS)))
+OBJ_H	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_H:.h=.h.o)))
+DEP_H	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_H:.h=.h.d)))
+
+SRC_HPP	?=	$(wildcard $(addsuffix *.hpp, $(LOCATIONS)))
+OBJ_HPP	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_HPP:.hpp=.hpp.o)))
+DEP_HPP	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_HPP:.hpp=.hpp.d)))
+
+SRC_CPP	?=	$(wildcard $(addsuffix *.cpp, $(LOCATIONS)))
+OBJ_CPP	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_CPP:.cpp=.o)))
+DEP_CPP	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_CPP:.cpp=.d)))
+
+ifeq ($(TARGET_OS), osx)
+SRC_MM	?=	$(wildcard $(addsuffix *.mm, $(LOCATIONS)))
+OBJ_MM	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_MM:.mm=.o)))
+DEP_MM	?=	$(addprefix $(OBJECT_DIRECTORY), $(notdir $(SRC_MM:.mm=.d)))
+endif
+
+else
+ifeq ($(TARGET), cleanbin)
+else
+ifeq ($(TARGET), clean)
+else
+ifeq ($(TARGET), cleanall)
+else
+$(error invalid target $(TARGET))
+endif
+endif
+endif
+endif
+endif
+endif
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+MUD_LIB		?= 	-lmudflapth -lpthread
+MUD_FLAG	?=	-fmudflapth
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+ASAN_FLAG   ?= -fsanitize=address
+ASAN_FLAG   += -fno-omit-frame-pointer
+
+ifeq ($(COMPILER), gcc)
+ASAN_FLAG   += -static-libasan
+endif
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+MAKECHECK	?= $(ROOT)uti_check/check.py
+
+CXXFLAGS    ?=  -std=c++17
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+ifeq ($(TARGET_OS), lin)
+CCACHE ?=
+else
+CCACHE ?= ccache
+endif
+
+ifeq ($(COMPILER), llvm)
+GPP ?= clang++
+#GPP ?= clang++ -v
+CXXFLAGS    += -stdlib=libstdc++
+else
+GPP ?= g++
+endif
+
+UTI_GPP         ?=  $(CCACHE) $(GPP) -pipe
+UTI_GPP_X86_32  ?=  $(CCACHE) $(GPP) -pipe
+UTI_GPP_X86_64  ?=  $(CCACHE) $(GPP) -pipe
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+CXXFLAGS    +=  -Wall
+CXXFLAGS    +=  -Werror
+#	CXXFLAGS    +=  -Wabi
+CXXFLAGS    +=  -Wextra
+CXXFLAGS    +=  -Weffc++
+CXXFLAGS    +=  -pedantic-errors
+CXXFLAGS    +=  -Wno-variadic-macros
+CXXFLAGS    +=  -Wno-long-long
+CXXFLAGS    +=  -Wctor-dtor-privacy
+CXXFLAGS    +=  -Wnon-virtual-dtor
+CXXFLAGS    +=  -Wreorder
+CXXFLAGS    +=  -Woverloaded-virtual
+CXXFLAGS    +=  -Wsign-promo
+CXXFLAGS    +=  -Wchar-subscripts
+CXXFLAGS    +=  -Wcomment
+CXXFLAGS    +=  -Wformat
+CXXFLAGS    +=  -Wformat-y2k
+CXXFLAGS    +=  -Wformat-nonliteral
+CXXFLAGS    +=  -Wformat-security
+CXXFLAGS    +=  -Wformat
+CXXFLAGS    +=  -Wfloat-equal
+CXXFLAGS    +=  -Winit-self
+CXXFLAGS    +=  -Wignored-qualifiers
+CXXFLAGS    +=  -Wmain
+CXXFLAGS    +=  -Wmissing-braces
+CXXFLAGS    +=  -Wmissing-include-dirs
+CXXFLAGS    +=  -Wparentheses
+CXXFLAGS    +=  -Wsequence-point
+CXXFLAGS    +=  -Wreturn-type
+CXXFLAGS    +=  -Wswitch
+CXXFLAGS    +=  -Wswitch-default
+CXXFLAGS    +=  -Wswitch-enum
+CXXFLAGS    +=  -Wtrigraphs
+CXXFLAGS    +=  -Wuninitialized
+CXXFLAGS    +=  -Wunknown-pragmas
+CXXFLAGS    +=  -Warray-bounds
+CXXFLAGS    +=  -Wundef
+CXXFLAGS    +=  -Wshadow
+CXXFLAGS    +=  -Wpointer-arith
+CXXFLAGS    +=  -Wtype-limits
+CXXFLAGS    +=  -Wcast-qual
+CXXFLAGS    +=  -Wcast-align
+CXXFLAGS    +=  -Wwrite-strings
+CXXFLAGS    +=  -Wconversion
+CXXFLAGS    +=  -Wempty-body
+CXXFLAGS    +=  -Wenum-compare
+CXXFLAGS    +=  -Wsign-compare
+CXXFLAGS    +=  -Wsign-conversion
+CXXFLAGS    +=  -Waddress
+CXXFLAGS    +=  -Wmissing-declarations
+CXXFLAGS    +=  -Wmissing-field-initializers
+CXXFLAGS    +=  -Wmissing-noreturn
+CXXFLAGS    +=  -Wmissing-format-attribute
+CXXFLAGS    +=  -Wpacked
+CXXFLAGS    +=  -Wredundant-decls
+CXXFLAGS    +=  -Winvalid-pch
+CXXFLAGS    +=  -Wvla
+CXXFLAGS    +=  -Wvolatile-register-var
+CXXFLAGS    +=  -Wdisabled-optimization
+CXXFLAGS    +=  -Wstack-protector
+CXXFLAGS    +=  -Woverlength-strings
+CXXFLAGS    +=  -Wunused-function
+CXXFLAGS    +=  -Wunused-label
+CXXFLAGS    +=  -Wunused-parameter
+CXXFLAGS    +=  -Wunused-variable
+CXXFLAGS    +=  -Wunused-value
+CXXFLAGS    +=  -Wunused
+#CXXFLAGS    +=  -Winline
+CXXFLAGS    +=  -Wstrict-aliasing=1
+
+ifeq ($(COMPILER), gcc)
+CXXFLAGS    +=  -fabi-version=0
+
+ifeq ($(MUD), true)
+CXXFLAGS    +=  -Wno-mudflap
+endif
+CXXFLAGS    +=  -Wsync-nand
+CXXFLAGS    +=  -Wclobbered
+CXXFLAGS    +=  -Wlogical-op
+CXXFLAGS    +=  -Wnormalized=nfkc
+CXXFLAGS    +=  -fno-nonansi-builtins
+CXXFLAGS    +=  -ftree-vrp
+CXXFLAGS    +=  -finput-charset=UTF-8
+CXXFLAGS    +=  -fexec-charset=UTF-8
+else
+ifeq ($(COMPILER), llvm)
+CXXFLAGS    +=  -fmacro-backtrace-limit=0
+CXXFLAGS    += -fuse-ld=lld
+endif
+endif
+
+CXXFLAGS    +=  -fno-rtti
+CXXFLAGS    +=  -fno-exceptions
+CXXFLAGS    +=  -fno-threadsafe-statics
+CXXFLAGS    +=  -fno-operator-names
+#CXXFLAGS    +=  -ffor-scope
+CXXFLAGS    +=  -fvisibility-inlines-hidden
+#CXXFLAGS    +=  -fstrict-aliasing
+#CXXFLAGS    +=  -fstrict-overflow
+CXXFLAGS    +=  -mstackrealign
+
+#CXXFLAGS    +=  -msse
+#CXXFLAGS    +=  -msse2
+#CXXFLAGS    +=  -msse3
+#CXXFLAGS    +=  -mssse3
+#CXXFLAGS    +=  -msse4.1
+#CXXFLAGS_RELEASE    +=  -fno-branch-count-reg
+
+#CXXFLAGS    +=  -Wstrict-overflow=5
+#CXXFLAGS    +=  -fno-implement-inlines
+#CXXFLAGS    +=  -fdefault-inline
+#BAD movaps :) #CXXFLAGS    +=  -ffloat-store
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+CXXFLAGS_DEBUG  ?=  -O0
+CXXFLAGS_DEBUG  +=  -g3
+CXXFLAGS_DEBUG  +=  -ggdb3
+CXXFLAGS_DEBUG  +=  -fstack-protector
+CXXFLAGS_DEBUG  +=  -fstack-protector-all
+CXXFLAGS_DEBUG  +=  -fverbose-asm
+CXXFLAGS_DEBUG  +=  -ftrapv
+
+ifeq ($(COMPILER), gcc)
+CXXFLAGS_DEBUG  +=  -fno-merge-debug-strings
+endif
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+CXXFLAGS_RELEASE    ?=  -O3
+#CXXFLAGS_RELEASE    +=  -fomit-frame-pointer
+#CXXFLAGS_RELEASE    +=  -foptimize-sibling-calls
+#CXXFLAGS_RELEASE    +=  -funroll-loops
+#CXXFLAGS_RELEASE    +=  -pipe
+#CXXFLAGS_RELEASE    +=  --param inline-unit-growth=20000
+#CXXFLAGS_RELEASE    +=  --param max-inline-insns-single=20000
+#CXXFLAGS_RELEASE    +=  --param large-function-growth=20000
+#CXXFLAGS_RELEASE    +=  -march=core2
+#CXXFLAGS_RELEASE    +=  -mtune=core2
+
+ifeq ($(COMPILER), gcc)
+CXXFLAGS_RELEASE    +=  -fforward-propagate
+CXXFLAGS_RELEASE    +=  -finline-functions
+CXXFLAGS_RELEASE    +=  -finline-small-functions
+CXXFLAGS_RELEASE    +=  -finline-functions-called-once
+CXXFLAGS_RELEASE    +=  -findirect-inlining
+CXXFLAGS_RELEASE    +=  -fearly-inlining
+CXXFLAGS_RELEASE    +=  -fmerge-constants
+CXXFLAGS_RELEASE    +=  -fmodulo-sched
+CXXFLAGS_RELEASE    +=  -fmodulo-sched-allow-regmoves
+CXXFLAGS_RELEASE    +=  -fthread-jumps
+CXXFLAGS_RELEASE    +=  -fsplit-wide-types
+CXXFLAGS_RELEASE    +=  -fcse-follow-jumps
+CXXFLAGS_RELEASE    +=  -fcse-skip-blocks
+CXXFLAGS_RELEASE    +=  -frerun-cse-after-loop
+CXXFLAGS_RELEASE    +=  -fgcse
+CXXFLAGS_RELEASE    +=  -fgcse-lm
+CXXFLAGS_RELEASE    +=  -fgcse-sm
+CXXFLAGS_RELEASE    +=  -fgcse-las
+CXXFLAGS_RELEASE    +=  -fgcse-after-reload
+CXXFLAGS_RELEASE    +=  -funsafe-loop-optimizations
+CXXFLAGS_RELEASE    +=  -fcrossjumping
+CXXFLAGS_RELEASE    +=  -fauto-inc-dec
+CXXFLAGS_RELEASE    +=  -fdce
+CXXFLAGS_RELEASE    +=  -fdse
+CXXFLAGS_RELEASE    +=  -fif-conversion
+CXXFLAGS_RELEASE    +=  -fif-conversion2
+CXXFLAGS_RELEASE    +=  -fdelete-null-pointer-checks
+CXXFLAGS_RELEASE    +=  -fexpensive-optimizations
+CXXFLAGS_RELEASE    +=  -foptimize-register-move
+CXXFLAGS_RELEASE    +=  -mfpmath=sse
+endif
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+##CXXFLAGS_X86_32     ?=  -m32
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+##CXXFLAGS_X86_64     ?=  -m64
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+ifeq ($(FATAL), true)
+	CXXFLAGS += "-Wfatal-errors"
+endif
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+ifeq ($(PP), true)
+    CXXPP += -E
+endif
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+ifeq ($(BUILD), lousy)
+	CXXFLAGS += $(CXXFLAGS_DEBUG)
+    DEFINES += "-DEMP_XX_LOUSY"
+else
+ifeq ($(BUILD), debug)
+	CXXFLAGS += $(CXXFLAGS_DEBUG)
+    DEFINES += "-DEMP_XX_DEBUG"
+else
+ifeq ($(BUILD), release)
+	CXXFLAGS += $(CXXFLAGS_RELEASE)
+    DEFINES += "-DEMP_XX_RELEASE"
+else
+ifeq ($(BUILD), final)
+    CXXFLAGS += $(CXXFLAGS_RELEASE)
+    DEFINES += "-DEMP_XX_FINAL"
+endif
+endif
+endif
+endif
+
+DEFINES += "-DEMP_XX_LOG"
+DEFINES += "-DEMP_UNIT_TEST"
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+ifeq ($(ARCH), x86_32)
+	UTI_GPP = $(UTI_GPP_X86_32)
+	CXXFLAGS += $(CXXFLAGS_X86_32)
+    DEFINES += "-DEMP_XX_ARCH_32"
+else
+ifeq ($(ARCH), x86_64)
+	UTI_GPP = $(UTI_GPP_X86_64)
+	CXXFLAGS += $(CXXFLAGS_X86_64)
+    DEFINES += "-DEMP_XX_ARCH_64"
+endif
+endif
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+ifeq ($(COMPILER), llvm)
+    DEFINES += "-DEMP_XX_COMPILER_LLVM"
+else
+ifeq ($(COMPILER), gcc)
+    DEFINES += "-DEMP_XX_COMPILER_GCC"
+endif
+endif
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+ifeq ($(TARGET_OS), osx)
+    DEFINES += "-DEMP_XX_OS_OSX"
+else
+ifeq ($(TARGET_OS), win)
+    DEFINES += "-DEMP_XX_OS_WIN"
+else
+ifeq ($(TARGET_OS), lin)
+    DEFINES += "-DEMP_XX_OS_LIN"
+endif
+endif
+endif
+
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+ifeq ($(DEVICE), arm)
+    DEFINES += "-DEMP_XX_DEVICE_ARM"
+else
+endif
+
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+DEFINES += "-DLIBXML_STATIC"
+DEFINES += "-DEMP_XX_ENV_MAKE"
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+ALL_LIBRARIES	?=$(LIBRARIES)
+ifeq ($(MUD), true)
+	CXXFLAGS += $(MUD_FLAG)
+	ALL_LIBRARIES += $(MUD_LIB)
+    $(info LIBRARIES=$(LIBRARIES))
+else
+ifeq ($(MUD), false)
+endif
+endif
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+ifeq ($(ASAN), true)
+    CXXFLAGS += $(ASAN_FLAG)
+else
+endif
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+ifeq ($(VALGRIND), true)
+    DEFINES +="-DEMP_XX_VALGRIND"
+endif
+
+#TIME_REPORT ?= -ftime-trace
+#-ftime-report -ftime-trace
+TIME_REPORT ?=
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+all: initialize $(OBJ_CPP) $(OBJ_MM) $(OBJ_C)
+	$(UTI_GPP) $(TIME_REPORT) $(CXXFLAGS) -o $(OUTPUT) $(OBJ_CPP) $(OBJ_MM) $(OBJ_C) $(ALL_LIBRARIES)
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+initialize:
+ifneq (, $(filter "$(BUILD)", "lousy" "debug" "release" "final"))
+	$(info "$(BUILD)" build...)
+else
+	$(error unknown build : "$(BUILD)")
+endif
+
+ifneq (, $(filter "$(ARCH)", "x86_32" "x86_64"))
+	$(info "$(ARCH)" architecture...)
+else
+	$(error unknown architecture : "$(ARCH)")
+endif
+
+ifneq (, $(filter "$(COMPILER)", "llvm" "gcc"))
+	$(info "$(COMPILER)" compiler...)
+else
+	$(error unknown compiler : "$(COMPILER)")
+endif
+
+ifneq (, $(filter "$(TARGET_OS)", "osx" "lin" "win"))
+	$(info "$(TARGET_OS)" os...)
+else
+	$(error unknown os : "$(TARGET_OS)")
+endif
+
+ifeq ($(MUD), true)
+	export MUDFLAP_OPTIONS='-internal-checking -print-leaks -check-initialization -ignore-fflush -register-anon-mmaps'
+else
+ifeq ($(MUD), false)
+endif
+endif
+
+	$(info creating : $(ARCH_DIRECTORY))
+	mkdir -p $(ARCH_DIRECTORY)
+	
+	$(info creating : $(BUILD_DIRECTORY))
+	mkdir -p $(BUILD_DIRECTORY)
+	
+	$(info creating : $(OBJECT_DIRECTORY))
+	mkdir -p $(OBJECT_DIRECTORY)
+
+	$(info creating : $(BINARY_DIRECTORY))
+	mkdir -p $(BINARY_DIRECTORY)
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+check:
+	$(MAKECHECK) $(CHECK_LOCATIONS) $(CHECK)
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+compile: initialize $(OBJ_H) $(OBJ_HPP) $(OBJ_CPP) $(OBJ_MM)
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+$(OBJECT_DIRECTORY)%.o:%.c
+	clang -o $@ -c $<
+
+-include $(DEP_C)
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+$(OBJECT_DIRECTORY)%.h.o:%.h
+	$(UTI_GPP) $(CXXPP) $(DEFINES) -include $(IMACROS) $(INCLUDE_LOCATIONS)\
+    $(CXXFLAGS) $(CPPFLAGS) -MD  -c $< -o $@
+
+-include $(DEP_H)
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+$(OBJECT_DIRECTORY)%.hpp.o:%.hpp
+	$(UTI_GPP) $(CXXPP) $(DEFINES) -include $(IMACROS) $(INCLUDE_LOCATIONS)\
+    $(CXXFLAGS) $(CPPFLAGS) -MD -c $< -o $@
+
+-include $(DEP_HPP)
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+$(OBJECT_DIRECTORY)%.o:%.cpp
+	$(UTI_GPP) $(TIME_REPORT) $(CXXPP) $(DEFINES) -include $(IMACROS) $(INCLUDE_LOCATIONS)\
+   $(CXXFLAGS) $(CPPFLAGS) -MD -c $< -o $@
+
+
+-include $(DEP_CPP)
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+$(OBJECT_DIRECTORY)%.o:%.mm
+	$(UTI_GPP) $(CXXPP) $(DEFINES) -include $(IMACROS) $(INCLUDE_LOCATIONS)\
+   $(CXXFLAGS) -MD -c $< -o $@
+
+
+-include $(DEP_MM)
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+cleanbin:
+	rm -rf $(BINARY_DIRECTORY)
+
+clean:
+	rm -rf $(BUILD_DIRECTORY); ccache -C
+
+cleanall:
+	rm -rf $(ARCH_DIRECTORY); ccache -C
+
+##-----------------------------------------------------------------------------
+##-----------------------------------------------------------------------------
+.PHONY: all initialize check compile cleanbin clean cleanall
+

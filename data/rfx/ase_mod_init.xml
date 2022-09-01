@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="ase::mod::text_c" duration="1.5" next="ase_mod_tuto_rgba.xml" prev="ase_mod_tuto_rgba.xml">
+ <label __name="mod_enter_title.label" alignment="MiddleCenter">
+  <skin name="lbl.title"/>
+  <state visible="1" enable="1" hover="0" focus="0" select="0" check="0" navigable="0" focusable="1" renderable="1" index="0" dock="none">
+   <autosize x="1" y="1"/>
+  </state>
+  <controls __count="0"/>
+  <transform>
+   <position x="0.568467" y="-0.7873679"/>
+   <size x="12.5011158" y="0.6979092"/>
+  </transform>
+ </label>
+ <window>
+  <skin name="wnd.main"/>
+  <state visible="0" enable="0" hover="1" focus="0" select="0" check="0" navigable="0" focusable="0" renderable="1" index="0" dock="none">
+   <autosize x="0" y="0"/>
+  </state>
+  <controls __count="1">
+   <i __type="emp::gui::button_c*">
+    <skin name=""/>
+    <state visible="1" enable="1" hover="1" focus="0" select="0" check="0" navigable="0" focusable="0" renderable="1" index="0" dock="Fill">
+     <autosize x="0" y="0"/>
+    </state>
+    <controls __count="1">
+     <i __pointer="mod_enter_title.label"/>
+    </controls>
+    <transform>
+     <position x="0.009375" y="-0.0117188"/>
+     <size x="1.98125" y="1.9765625"/>
+    </transform>
+   </i>
+  </controls>
+  <transform>
+   <position x="0" y="0"/>
+   <size x="2" y="2"/>
+  </transform>
+ </window>
+ <desc key="ase_mod_title_desc" value=""/>
+ <name key="ase_mod_title_name" value=""/>
+</__object>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="ase::cor::composition_music_c" compo="emp_snd_composition_greensleeves.xml">
+ <performance>
+  <buckets __count="3">
+   <i>
+    <options mod="Easy" shuffle="0" score_visible="1" score_letters="1" score_durations="1" keyboard_visible="1" keyboard_letters="1"/>
+    <data __count="10">
+     <i user="ase_cor_user_rgen.xml" score="88.4955826" time="111012681" success="94.2477951" failure="5.7522125"/>
+     <i user="ase_cor_user_rgen.xml" score="90.2654877" time="26936856" success="95.1327515" failure="4.8672566"/>
+     <i user="ase_cor_user_rgen.xml" score="97.9351044" time="28687418" success="98.9675598" failure="1.0324484"/>
+     <i user="ase_cor_user_rgen.xml" score="100.0000076" time="29304150" success="100.0000076" failure="0"/>
+     <i user="ase_cor_user_rgen.xml" score="93.5103302" time="32188054" success="96.7551651" failure="3.244838"/>
+     <i user="ase_cor_user_rgen.xml" score="21.2389393" time="9050626" success="22.2713871" failure="1.0324484"/>
+     <i user="ase_cor_user_rgen.xml" score="21.2389393" time="7635272" success="22.2713871" failure="1.0324484"/>
+     <i user="ase_cor_user_rgen.xml" score="84.3657837" time="23236496" success="92.1828918" failure="7.8171096"/>
+     <i user="ase_cor_user_rgen.xml" score="99.1150513" time="24937483" success="99.5575256" failure="0.4424779"/>
+     <i user="ase_cor_user_rgen.xml" score="5.1622419" time="2900717" success="7.3746314" failure="2.2123895"/>
+    </data>
+   </i>
+   <i>
+    <options mod="Hard" shuffle="0" score_visible="1" score_letters="1" score_durations="1" keyboard_visible="1" keyboard_letters="1"/>
+    <data __count="1">
+     <i user="ase_cor_user_rgen.xml" score="1.1044767" time="25343750" success="1.1044767" failure="0"/>
+    </data>
+   </i>
+   <i>
+    <options mod="Normal" shuffle="0" score_visible="1" score_letters="1" score_durations="1" keyboard_visible="1" keyboard_letters="1"/>
+    <data __count="1">
+     <i user="ase_cor_user_rgen.xml" score="34.7966919" time="25343750" success="67.5516281" failure="32.7549324"/>
+    </data>
+   </i>
+  </buckets>
+  <user_data __count="2">
+   <i user="ase_cor_user_rgen.xml" played="1" rating="0"/>
+   <i user="ase_cor_user_rgen.xml" played="11" rating="0"/>
+  </user_data>
+ </performance>
+</__object>

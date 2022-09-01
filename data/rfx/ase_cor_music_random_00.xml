@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="ase::cor::random_music_c" name="Au hasard (facile)" beat_per_minute="128" max_touches="1" max_left_touches="1" max_right_touches="1" max_duration="60" full_time="0">
+ <performance>
+  <buckets __count="2">
+   <i>
+    <options mod="Easy" shuffle="0" score_visible="1" score_letters="1" score_durations="1" keyboard_visible="1" keyboard_letters="1"/>
+    <data __count="2">
+     <i user="ase_cor_user_rgen.xml" score="89.8305206" time="33888801" success="94.9152603" failure="5.0847464"/>
+     <i user="ase_cor_user_rgen.xml" score="100.0000076" time="41690963" success="100.0000076" failure="0"/>
+    </data>
+   </i>
+   <i>
+    <options mod="Normal" shuffle="0" score_visible="1" score_letters="1" score_durations="1" keyboard_visible="1" keyboard_letters="1"/>
+    <data __count="1">
+     <i user="ase_cor_user_rgen.xml" score="57.5064697" time="61537499" success="78.125" failure="20.6185322"/>
+    </data>
+   </i>
+  </buckets>
+  <user_data __count="1">
+   <i user="ase_cor_user_rgen.xml" played="3" rating="0"/>
+  </user_data>
+ </performance>
+</__object>

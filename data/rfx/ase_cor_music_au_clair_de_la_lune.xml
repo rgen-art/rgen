@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="ase::cor::composition_music_c" compo="emp_snd_composition_au_clair_de_la_lune.xml">
+ <performance>
+  <buckets __count="3">
+   <i>
+    <options mod="Easy" shuffle="0" score_visible="1" score_letters="1" score_durations="1" keyboard_visible="1" keyboard_letters="1"/>
+    <data __count="9">
+     <i user="ase_cor_user_rgen.xml" score="100" time="25536764" success="100" failure="0"/>
+     <i user="ase_cor_user_rgen.xml" score="100" time="44288981" success="100" failure="0"/>
+     <i user="ase_cor_user_rgen.xml" score="83.690979" time="73676998" success="91.8454895" failure="8.1545057"/>
+     <i user="ase_cor_user_rgen.xml" score="51.0729637" time="84246104" success="75.5364761" failure="24.4635162"/>
+     <i user="ase_cor_user_rgen.xml" score="73.8197403" time="75794198" success="86.9098663" failure="13.090127"/>
+     <i user="ase_cor_user_rgen.xml" score="19.742487" time="4700904" success="24.5708122" failure="4.8283248"/>
+     <i user="ase_cor_user_rgen.xml" score="-0.2145947" time="2316948" success="6.4377666" failure="6.6523614"/>
+     <i user="ase_cor_user_rgen.xml" score="100" time="10984401" success="100" failure="0"/>
+     <i user="ase_cor_user_rgen.xml" score="100" time="9017913" success="100" failure="0"/>
+    </data>
+   </i>
+   <i>
+    <options mod="Hard" shuffle="0" score_visible="1" score_letters="1" score_durations="1" keyboard_visible="1" keyboard_letters="1"/>
+    <data __count="1">
+     <i user="ase_cor_user_rgen.xml" score="14.6263151" time="35445662" success="24.7478886" failure="10.1215725"/>
+    </data>
+   </i>
+   <i>
+    <options mod="Normal" shuffle="0" score_visible="1" score_letters="1" score_durations="1" keyboard_visible="1" keyboard_letters="1"/>
+    <data __count="7">
+     <i user="ase_cor_user_rgen.xml" score="14.2525663" time="35445662" success="42.4892693" failure="28.2367001"/>
+     <i user="ase_cor_user_rgen.xml" score="1.2803372" time="35445662" success="4.8283248" failure="3.5479875"/>
+     <i user="ase_cor_user_rgen.xml" score="-5.3706317" time="35445662" success="1.6094416" failure="6.9800735"/>
+     <i user="ase_cor_user_rgen.xml" score="-11.09307" time="35445662" success="39.1630859" failure="50.2561569"/>
+     <i user="ase_cor_user_rgen.xml" score="98.2832565" time="35445662" success="100" failure="1.7167422"/>
+     <i user="ase_cor_user_rgen.xml" score="98.1292877" time="35445662" success="100" failure="1.8707106"/>
+     <i user="ase_cor_user_rgen.xml" score="100" time="35445662" success="100" failure="0"/>
+    </data>
+   </i>
+  </buckets>
+  <user_data __count="5">
+   <i user="ase_cor_user_rgen.xml" played="2" rating="0"/>
+   <i user="ase_cor_user_rgen.xml" played="4" rating="0"/>
+   <i user="ase_cor_user_rgen.xml" played="2" rating="0"/>
+   <i user="ase_cor_user_rgen.xml" played="2" rating="0"/>
+   <i user="ase_cor_user_rgen.xml" played="7" rating="0"/>
+  </user_data>
+ </performance>
+</__object>

@@ -1,0 +1,37 @@
+{
+    "files.associations": {
+        "maketarget": "makefile",
+        "makeuser": "makefile",
+        "*.txt": "cpp",
+        "type_traits": "cpp",
+        "xstring": "cpp",
+        "chrono": "cpp",
+        "bitset": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "*.tcc": "cpp",
+        "string_view": "cpp",
+        "optional": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "ratio": "cpp",
+        "system_error": "cpp",
+        "array": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp"
+    },
+
+    "terminal.integrated.profiles.windows": {
+        "mingw64": {
+          //"path": "C:\\msys64\\msys2_shell.cmd",
+          "path": "C:\\msys64\\usr\\bin\\bash.exe",
+          "args": ["--login"]
+        }
+    },
+    "terminal.integrated.env.windows": {
+        "CHERE_INVOKING": "1",
+        "MSYSTEM": "MINGW64",
+    },
+    //"terminal.integrated.defaultProfile.windows": "mingw64",
+       // "C:\Program Files\Git\git-bash.exe" --cd-to-home
+}

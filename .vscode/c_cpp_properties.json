@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "mingw64",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "EMP_XX_DEBUG",
+                "EMP_XX_LOG",
+                "EMP_UNIT_TEST",
+                "EMP_XX_ARCH_64",
+                "EMP_XX_COMPILER_LLVM",
+                "EMP_XX_OS_WIN",
+                "EMP_XX_DEVICE_ARM"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "C:/msys64/mingw64/bin/clang++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-x64",
+            "forcedInclude": [
+                "${workspaceFolder}/bin_rgen/imacro.h"
+            ],
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}

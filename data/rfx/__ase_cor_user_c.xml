@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="ase::cor::user_c" name="">
+    <options scaling="1.0" skin="" locale="">
+        <selection pool="" gallery_width="8" edition="0">
+            <pools/>
+        </selection>
+    <evolution left="256" max="256" consumed="0">
+        <mutation>
+            <literal active="0" base="0" count="0" scale="1" offset="0"/>
+            <variant active="0" base="0" count="0" scale="1" offset="0"/>
+            <call active="0" base="0" count="0" scale="1" offset="0"/>
+            <data active="0" base="0" count="0" scale="1" offset="0"/>
+            <trailing active="0" base="0" count="0" scale="1" offset="0"/>
+        </mutation>
+            <crossover/>
+        </evolution>
+        <emphase>
+            <keyboard/>
+            <score/>
+        </emphase>
+    </options>
+</__object>
+

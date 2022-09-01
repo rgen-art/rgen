@@ -1,0 +1,116 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "options": {
+        "env": {
+          "PATH": "C:\\msys64\\usr\\bin;C:\\msys64\\mingw64\\bin"
+        }
+     },
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "LOUSY",
+            "type": "shell",
+            "command": "C:/msys64/usr/bin/make.exe",
+            "args": [
+                "BUILD=lousy",
+                "FATAL=true"
+            ],
+            "problemMatcher": [
+                "$gcc",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": ["REMOVE_BIN_LOUSY"],
+        },
+        {
+            "label": "DEBUG",
+            "type": "shell",
+            "command": "C:/msys64/usr/bin/make.exe",
+            "args": [
+                "BUILD=debug",
+                "FATAL=true"
+            ],
+            "problemMatcher": [
+                "$gcc",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": ["REMOVE_BIN_DEBUG"],
+        },
+        {
+            "label": "RELEASE",
+            "type": "shell",
+            "command": "C:/msys64/usr/bin/make.exe",
+            "args": [
+                "BUILD=release",
+                "FATAL=true"
+            ],
+            "problemMatcher": [
+                "$gcc",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": ["REMOVE_BIN_RELEASE"],
+        },
+        {
+            "label": "FINAL",
+            "type": "shell",
+            "command": "C:/msys64/usr/bin/make.exe",
+            "args": [
+                "BUILD=final",
+                "FATAL=true"
+            ],
+            "problemMatcher": [
+                "$gcc",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": ["REMOVE_BIN_FINAL"],
+        },
+        {
+            "label": "REMOVE_BIN_LOUSY",
+            "type": "shell",
+            "command": "C:/msys64/usr/bin/make.exe",
+            "args": [
+                "cleanbin",
+                "BUILD=lousy"
+            ],
+        },
+        {
+            "label": "REMOVE_BIN_DEBUG",
+            "type": "shell",
+            "command": "C:/msys64/usr/bin/make.exe",
+            "args": [
+                "cleanbin",
+                "BUILD=debug"
+            ],
+        },
+        {
+            "label": "REMOVE_BIN_RELEASE",
+            "type": "shell",
+            "command": "C:/msys64/usr/bin/make.exe",
+            "args": [
+                "cleanbin",
+                "BUILD=release"
+            ],
+        },
+        {
+            "label": "REMOVE_BIN_FINAL",
+            "type": "shell",
+            "command": "C:/msys64/usr/bin/make.exe",
+            "args": [
+                "cleanbin",
+                "BUILD=final"
+            ],
+        }
+    ]
+}

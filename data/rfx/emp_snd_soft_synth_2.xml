@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::snd::soft_synth_c" name="Bass" quality="emp_snd_quality_00.xml">
+ <functions __count="4">
+  <i expression="left,right">
+   <inputs __count="2">
+    <i function="1" index="0" value="0"/>
+    <i function="1" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="s*e">
+   <inputs __count="2">
+    <i function="3" index="0" value="0"/>
+    <i function="2" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="envelope()">
+   <inputs __count="0"/>
+   <params __count="4">0 0 0 1 -0.0011054 0.8658089 0 1 0.0893855 0.1674503 0 1 0.198866 0 0 1</params>
+  </i>
+  <i expression="sin(pi*time*frequency*0.25)">
+   <inputs __count="2">
+    <i function="4294967295" index="4294967295" value="0"/>
+    <i function="4294967295" index="4294967295" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+ </functions>
+ <info __count="4">
+  <i scale="1" scale_x="1" scale_y="1" expand_input="0" expand_output="0" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="1.0170412" y="-0.6072408"/>
+   <size x="0.44" y="0.3425279"/>
+   <function_size x="0" y="0"/>
+  </i>
+  <i scale="1" scale_x="1" scale_y="1" expand_input="0" expand_output="0" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="1.1950766" y="-0.0847759"/>
+   <size x="0.4" y="0.2905775"/>
+   <function_size x="0" y="0"/>
+  </i>
+  <i scale="0.6142537" scale_x="3.671452" scale_y="0.4963064" expand_input="0" expand_output="0" show_input="0" show_output="1" show_current="1" log_x="0" log_y="0">
+   <position x="0.0350765" y="-0.3697752"/>
+   <size x="0.7310018" y="0.5146426"/>
+   <function_size x="0.6995019" y="0.3999999"/>
+  </i>
+  <i scale="1" scale_x="1" scale_y="1" expand_input="0" expand_output="0" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="0.0300765" y="-0.0497758"/>
+   <size x="0.86" y="0.2905775"/>
+   <function_size x="0" y="0"/>
+  </i>
+ </info>
+</__object>

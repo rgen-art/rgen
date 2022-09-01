@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="ase::cor::game_c" user="ase_cor_user_rgen.xml" mod_selection="ase_mod_selection.xml" mod_evolution="ase_mod_evolution.xml" mod_emphase="ase_mod_emphase.xml" mod_improvize="ase_mod_improvize.xml">
+ <modes __count="1">
+  <i __pointer="ase_mod_rgen.xml"/>
+ </modes>
+ <debug_modes __count="10">
+  <i __pointer="ase_mod_rgen.xml"/>
+  <i __pointer="ase_mod_selection.xml"/>
+  <i __pointer="ase_mod_evolution.xml"/>
+  <i __pointer="ase_mod_emphase.xml"/>
+  <i __pointer="ase_mod_compose.xml"/>
+  <i __pointer="ase_mod_synthesize.xml"/>
+  <i __pointer="ase_mod_artwork.xml"/>
+  <i __pointer="ase_mod_preferences.xml"/>
+  <i __pointer="ase_mod_about.xml"/>
+  <i __pointer="ase_mod_debug.xml"/>
+ </debug_modes>
+</__object>

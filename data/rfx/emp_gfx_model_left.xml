@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::gfx::model_c">
+ <meshes __count="2">
+  <i>
+   <indices __type="emp::gfx::buffer_t[ui8]*"><data __count="3">0 1 2</data>   </indices>
+   <vertices __type="emp::gfx::buffer_t[emp::mat::v4f,emp::mat::v4f]*"><data __count="3">-1.6 0 0 0 1 0 0 0 -0.2 -0.6999999 0 0 1 0 0 0 -0.2 0.6999999 0 0 1 0 0 0</data>   </vertices>
+  </i>
+  <i>
+   <indices __type="emp::gfx::buffer_t[ui8]*"><data __count="0"/>   </indices>
+   <vertices __type="emp::gfx::buffer_t[emp::mat::v4f,emp::mat::v4f]*"><data __count="0"/>   </vertices>
+  </i>
+ </meshes>
+</__object>

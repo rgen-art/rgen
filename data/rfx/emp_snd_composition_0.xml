@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::snd::composition_c" name="Test">
+ <tracks __count="4">
+  <i __pointer="emp_snd_track_0.xml"/>
+  <i __pointer="emp_snd_track_1.xml"/>
+  <i __pointer="emp_snd_track_2.xml"/>
+  <i __pointer="emp_snd_track_3.xml"/>
+ </tracks>
+</__object>

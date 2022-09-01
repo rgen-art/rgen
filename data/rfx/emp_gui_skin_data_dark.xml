@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::gui::skin_data_s" name="Dark" font_title="emp_gfx_font_DejaVuSansMono.xml" font_text="emp_gfx_font_Terminus.xml" font_size_text="0.039" font_size_button="0.042" font_size_column="0.041" font_size_toolbar="0.044" font_size_menu="0.043" font_size_h4="0.1" font_size_h3="0.2" font_size_h2="0.3" font_size_h1="0.4" random_link="1" gfx_minus="emp_gfx_model_minus.xml" gfx_plus="emp_gfx_model_plus.xml" gfx_up="emp_gfx_model_up.xml" gfx_down="emp_gfx_model_down.xml" gfx_left="emp_gfx_model_left.xml" gfx_right="emp_gfx_model_right.xml" gfx_scroll="emp_gfx_model_plus.xml" gfx_on="emp_gfx_model_check_box.xml" gfx_off="emp_gfx_model_box.xml" gfx_edit="emp_gfx_model_edit.xml" gfx_check="emp_gfx_model_check.xml">
+ <spacing x="0.015" y="0.015"/>
+ <a20 x="1" y="1" z="1" w="0.2"/>
+ <a25 x="1" y="1" z="1" w="0.25"/>
+ <a38 x="1" y="1" z="1" w="0.38"/>
+ <a50 x="1" y="1" z="1" w="0.7"/>
+ <a75 x="1" y="1" z="1" w="0.75"/>
+ <dark x="0.701" y="0.701" z="0.701" w="1"/>
+ <light x="1.22474" y="1.22474" z="1.22474" w="1"/>
+ <control x="0.11765" y="0.11765" z="0.11765" w="1"/>
+ <text x="0.7851495" y="0.7851495" z="0.7851495" w="1"/>
+ <window x="0" y="0" z="0" w="1"/>
+ <link x="0.0649232" y="0.6191714" z="0.8527403" w="1"/>
+ <black x="0" y="0" z="0" w="1"/>
+ <zero x="0" y="0" z="0" w="0"/>
+ <white x="1" y="1" z="1" w="1"/>
+ <red x="1" y="0" z="0" w="1"/>
+ <green x="0" y="1" z="0" w="1"/>
+ <blue x="0" y="0" z="1" w="1"/>
+ <yellow x="1" y="1" z="0" w="1"/>
+ <pink x="1" y="0" z="1" w="1"/>
+ <orange x="1" y="0.5" z="0" w="1"/>
+</__object>

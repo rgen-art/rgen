@@ -1,0 +1,11 @@
+x86_32
+x86_64
+geshi
+makeuser
+*.suo
+*~
+*.makefile.swo
+*.swp
+*.lock*.odt#
+*.swo
+

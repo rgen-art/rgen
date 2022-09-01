@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="ase::cor::album_c" name="all" cover="emp_gfx_model_plus.xml">
+ <musics __count="7">
+  <i __pointer="ase_cor_music_au_clair_de_la_lune.xml"/>
+  <i __pointer="ase_cor_music_greensleeves.xml"/>
+  <i __pointer="ase_cor_music_mario_bros.xml"/>
+  <i __pointer="ase_cor_music_random_00.xml"/>
+  <i __pointer="ase_cor_music_random_01.xml"/>
+  <i __pointer="ase_cor_music_random_02.xml"/>
+  <i __pointer="ase_cor_music_random_03.xml"/>
+ </musics>
+</__object>

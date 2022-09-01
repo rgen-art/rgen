@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::snd::composition_c" name="Au clair de la lune">
+ <tracks __count="1">
+  <i __pointer="emp_snd_track_au_clair_de_la_lune_00.xml"/>
+ </tracks>
+</__object>

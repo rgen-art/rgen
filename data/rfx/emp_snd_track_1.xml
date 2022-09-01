@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::snd::track_c" name="__no_name__" beat_duration="234375" scale="emp_snd_scale_unit.xml" layout="emp_snd_soft_synth_1.xml" loop="0">
+ <notes __count="4">
+  <i index="3" time="468748" duration="468631"/>
+  <i index="3" time="1406248" duration="468649"/>
+  <i index="3" time="2343749" duration="468649"/>
+  <i index="3" time="3281249" duration="468649"/>
+ </notes>
+</__object>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::snd::track_c" name="Mario Bros 00" beat_duration="600000" scale="emp_snd_scale_chromatic.xml" layout="emp_snd_soft_synth_harlem.xml" loop="0">
+ <notes __count="60">
+  <i index="19" time="0" duration="112500"/>
+  <i index="19" time="150000" duration="262500"/>
+  <i index="19" time="450000" duration="112500"/>
+  <i index="15" time="600000" duration="112500"/>
+  <i index="19" time="750000" duration="262500"/>
+  <i index="22" time="1050000" duration="862500"/>
+  <i index="10" time="1950000" duration="862500"/>
+  <i index="15" time="2850000" duration="262500"/>
+  <i index="10" time="3150000" duration="112500"/>
+  <i index="7" time="3300000" duration="262500"/>
+  <i index="12" time="3600000" duration="112500"/>
+  <i index="14" time="3750000" duration="112500"/>
+  <i index="13" time="3900000" duration="112500"/>
+  <i index="12" time="4050000" duration="262500"/>
+  <i index="10" time="4350000" duration="262500"/>
+  <i index="19" time="4650000" duration="262500"/>
+  <i index="22" time="4950000" duration="262500"/>
+  <i index="24" time="5250000" duration="262500"/>
+  <i index="20" time="5550000" duration="112500"/>
+  <i index="22" time="5700000" duration="112500"/>
+  <i index="19" time="5850000" duration="112500"/>
+  <i index="15" time="6000000" duration="112500"/>
+  <i index="17" time="6150000" duration="112500"/>
+  <i index="26" time="6300000" duration="112500"/>
+  <i index="15" time="6450000" duration="262500"/>
+  <i index="10" time="6750000" duration="112500"/>
+  <i index="7" time="6900000" duration="262500"/>
+  <i index="12" time="7200000" duration="112500"/>
+  <i index="14" time="7350000" duration="112500"/>
+  <i index="13" time="7500000" duration="112500"/>
+  <i index="12" time="7650000" duration="262500"/>
+  <i index="10" time="7950000" duration="262500"/>
+  <i index="19" time="8250000" duration="262500"/>
+  <i index="22" time="8550000" duration="262500"/>
+  <i index="24" time="8850000" duration="262500"/>
+  <i index="20" time="9150000" duration="112500"/>
+  <i index="22" time="9300000" duration="112500"/>
+  <i index="19" time="9450000" duration="112500"/>
+  <i index="15" time="9600000" duration="112500"/>
+  <i index="17" time="9750000" duration="112500"/>
+  <i index="26" time="9900000" duration="112500"/>
+  <i index="22" time="10050000" duration="112500"/>
+  <i index="21" time="10200000" duration="112500"/>
+  <i index="20" time="10350000" duration="112500"/>
+  <i index="18" time="10500000" duration="262500"/>
+  <i index="19" time="10800000" duration="112500"/>
+  <i index="11" time="10950000" duration="112500"/>
+  <i index="12" time="11100000" duration="112500"/>
+  <i index="15" time="11250000" duration="112500"/>
+  <i index="12" time="11400000" duration="112500"/>
+  <i index="15" time="11550000" duration="112500"/>
+  <i index="17" time="11700000" duration="112500"/>
+  <i index="22" time="11850000" duration="112500"/>
+  <i index="21" time="12000000" duration="112500"/>
+  <i index="20" time="12150000" duration="112500"/>
+  <i index="18" time="12300000" duration="262500"/>
+  <i index="19" time="12600000" duration="112500"/>
+  <i index="27" time="12750000" duration="112500"/>
+  <i index="27" time="12900000" duration="112500"/>
+  <i index="27" time="13050000" duration="412500"/>
+ </notes>
+</__object>

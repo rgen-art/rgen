@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::snd::soft_synth_c" name="High hat" quality="emp_snd_quality_00.xml">
+ <functions __count="4">
+  <i expression="left,right">
+   <inputs __count="2">
+    <i function="2" index="0" value="0"/>
+    <i function="2" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="random()">
+   <inputs __count="0"/>
+   <params __count="0"/>
+  </i>
+  <i expression="signal*e">
+   <inputs __count="2">
+    <i function="1" index="0" value="0"/>
+    <i function="3" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="envelope()">
+   <inputs __count="0"/>
+   <params __count="4">0 0 0 1 0.0002832 1.9085128 0 1 0.0017202 -0.0229571 0 1 0.0909182 0.001368 0 1</params>
+  </i>
+ </functions>
+ <info __count="4">
+  <i scale="1" scale_x="1" scale_y="1" expand_input="0" expand_output="0" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="1.0911736" y="-0.0627188"/>
+   <size x="0.4" y="0.8148492"/>
+   <function_size x="0" y="0"/>
+  </i>
+  <i scale="1" scale_x="1" scale_y="1" expand_input="0" expand_output="0" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="0.0686737" y="-0.0552187"/>
+   <size x="0.4" y="0.4541188"/>
+   <function_size x="0" y="0"/>
+  </i>
+  <i scale="1" scale_x="1" scale_y="1" expand_input="0" expand_output="0" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="1.1461741" y="-0.7327188"/>
+   <size x="0.4" y="0.7208436"/>
+   <function_size x="0" y="0"/>
+  </i>
+  <i scale="0.0168764" scale_x="388.686676" scale_y="4.3582678" expand_input="0" expand_output="0" show_input="0" show_output="1" show_current="1" log_x="0" log_y="0">
+   <position x="0.088674" y="-0.5177184"/>
+   <size x="1.4382516" y="0.9724188"/>
+   <function_size x="0.6906258" y="0.4"/>
+  </i>
+ </info>
+</__object>

@@ -1,0 +1,117 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // C:\msys64\msys2_shell.cmd -mingw64
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "LOUSY",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/bin_rgen/x86_64/lousy/bin/rgen.exe",
+            "args": [
+                "--unit", "0",
+                "--width", "1024",
+                "--height", "1024",
+                "--log", "0",
+                "--data", "data/"
+             ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "LOUSY",
+            "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "DEBUG",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/bin_rgen/x86_64/debug/bin/rgen.exe",
+            "args": [
+                "--unit", "0",
+                "--width", "1024",
+                "--height", "1024",
+                "--log", "0",
+                "--data", "data/"
+             ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "DEBUG",
+            "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "RELEASE",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/bin_rgen/x86_64/release/bin/rgen.exe",
+            "args": [
+                "--unit", "0",
+                "--width", "512",
+                "--height", "512",
+                "--log", "0",
+                "--data", "data/"
+             ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "RELEASE",
+            "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "FINAL",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/bin_rgen/x86_64/final/bin/rgen.exe",
+            "args": [
+                "--unit", "0",
+                "--width", "1024",
+                "--height", "1024",
+                "--log", "0",
+                "--data", "data/"
+             ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "FINAL",
+            "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

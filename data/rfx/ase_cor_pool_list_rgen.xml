@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="ase::cor::pool_list_c">
+ <pools __count="3">
+  <i __pointer="ase_cor_pool_roots.xml"/>
+  <i __pointer="ase_cor_pool_unused_0.xml"/>
+  <i __pointer="ase_cor_pool_all_0.xml"/>
+ </pools>
+</__object>

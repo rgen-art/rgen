@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::snd::soft_synth_c" name="Pshh" quality="emp_snd_quality_00.xml">
+ <functions __count="3">
+  <i expression="random()*e">
+   <inputs __count="1">
+    <i function="2" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="left,right">
+   <inputs __count="2">
+    <i function="0" index="0" value="0"/>
+    <i function="0" index="0" value="0"/>
+   </inputs>
+   <params __count="0"/>
+  </i>
+  <i expression="envelope()">
+   <inputs __count="0"/>
+   <params __count="5">0 0 0 1 0.0013296 1.2174644 0 1 0.0195164 0.0185606 0 1 0.1299429 0.2675412 0 1 0.2270397 0.0285124 0 1</params>
+  </i>
+ </functions>
+ <info __count="3">
+  <i scale="0.0638869" scale_x="1" scale_y="1" expand_input="1" expand_output="1" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="0.0431163" y="-0.6287386"/>
+   <size x="0.5724999" y="0.4352103"/>
+   <function_size x="0.5409999" y="0.15"/>
+  </i>
+  <i scale="1" scale_x="1" scale_y="1" expand_input="1" expand_output="0" show_input="0" show_output="0" show_current="0" log_x="0" log_y="0">
+   <position x="1.1481171" y="-0.6312377"/>
+   <size x="0.4125001" y="0.8148489"/>
+   <function_size x="0.3810002" y="0.2633333"/>
+  </i>
+  <i scale="0.8329721" scale_x="4.2332873" scale_y="0.2875723" expand_input="0" expand_output="0" show_input="0" show_output="1" show_current="1" log_x="0" log_y="0">
+   <position x="0.0331168" y="-0.0462383"/>
+   <size x="1.9340056" y="0.9724188"/>
+   <function_size x="0.9385028" y="0.4"/>
+  </i>
+ </info>
+</__object>

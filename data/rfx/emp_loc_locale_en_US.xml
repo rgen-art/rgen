@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::loc::locale_c" name="en_US">
+ <strings __count="176">
+  <i key="emp_empathie_name" value=".rgen."/>
+  <i key="emp::loc::string_s.key::name" value="Key"/>
+  <i key="emp::loc::string_s.value::name" value="Value"/>
+  <i key="emp::loc::locale_c.name::name" value="Name"/>
+  <i key="emp::loc::locale_c.strings::name" value="Translations"/>
+  <i key="emp::loc::string_s.no_translation" value="__no_translation__"/>
+  <i key="emp::mat::v2f.x::name" value="x"/>
+  <i key="emp::mat::v2f.y::name" value="y"/>
+  <i key="emp::mat::v4f.x::name" value="x"/>
+  <i key="emp::mat::v4f.y::name" value="y"/>
+  <i key="emp::mat::v4f.z::name" value="z"/>
+  <i key="emp::mat::v4f.w::name" value="w"/>
+  <i key="emp::mat::nurbs_c.name::name" value="Name"/>
+  <i key="emp::mat::nurbs_c.knots::name" value="Knots"/>
+  <i key="emp::mat::nurbs_c.points::name" value="Points"/>
+  <i key="emp::mat::glyph_c.name::name" value="Name"/>
+  <i key="emp::mat::glyph_c.outlines::name" value="Outlines"/>
+  <i key="emp::mat::outline_s.name::name" value="Name"/>
+  <i key="emp::mat::outline_s.points::name" value="Points"/>
+  <i key="emp::mat::point_c.control::name" value="Control"/>
+  <i key="emp::mat::point_c.position::name" value="Position"/>
+  <i key="emp::gfx::icon_c.name::name" value="Name"/>
+  <i key="emp::gfx::icon_c.curves::name" value="Curves"/>
+  <i key="emp::gfx::icon_c.model::name" value="Model"/>
+  <i key="emp::gfx::model_c.meshes::name" value="Meshes"/>
+  <i key="emp::gfx::mesh_c.stride::name" value="Stride"/>
+  <i key="emp::gfx::mesh_c.indices::name" value="Indices"/>
+  <i key="emp::gfx::mesh_c.vertices::name" value="Vertices"/>
+  <i key="emp::snd::instrument_c.name::name" value="Name"/>
+  <i key="emp::snd::instrument_c.quality::name" value="Quality"/>
+  <i key="emp::snd::instrument_c.sound::name" value="Sound"/>
+  <i key="emp::snd::instrument_c.envelope::name" value="Envelope"/>
+  <i key="emp::snd::instrument_c.scale::name" value="Scale"/>
+  <i key="emp::snd::envelope_c.name::name" value="Name"/>
+  <i key="emp::snd::envelope_c.nurbs::name" value="Nurbs"/>
+  <i key="emp::snd::scale_c.name::name" value="Name"/>
+  <i key="emp::snd::scale_c.origin::name" value="Origin"/>
+  <i key="emp::snd::scale_c.tones::name" value="Tones"/>
+  <i key="emp::snd::scale_c.ratio::name" value="Ratio"/>
+  <i key="emp::snd::scale_c.offset::name" value="Offset"/>
+  <i key="emp::snd::quality_c.name::name" value="Name"/>
+  <i key="emp::snd::quality_c.rate::name" value="Rate"/>
+  <i key="emp::snd::quality_c.depth::name" value="Depth"/>
+  <i key="emp::snd::quality_c.channels::name" value="Channels"/>
+  <i key="emp::snd::quality_c.volume::name" value="Volume"/>
+  <i key="emp::snd::sample_c.name::name" value="Name"/>
+  <i key="emp::snd::sample_c.filename::name" value="File"/>
+  <i key="emp_gui_name" value="Name"/>
+  <i key="emp_gui_value" value="Value"/>
+  <i key="emp_gui_true" value="true"/>
+  <i key="emp_gui_false" value="false"/>
+  <i key="emp_gui_dialog_ok" value="Ok"/>
+  <i key="emp_gui_dialog_cancel" value="Cancel"/>
+  <i key="emp_gui_dialog_yes" value="Yes"/>
+  <i key="emp_gui_dialog_no" value="No"/>
+  <i key="ase_emphase_name" value=".emphase."/>
+  <i key="emp::gui::track_c.name::name" value="Track"/>
+  <i key="emp::gui::track_c.layout::name" value="Layout"/>
+  <i key="emp::gui::track_c.scale::name" value="Scale"/>
+  <i key="emp::gui::track_c.beat_per_minute::name" value="BPM"/>
+  <i key="emp::gui::track_c.volume::name" value="Volume"/>
+  <i key="emp::gui::track_c.enabled::name" value="Enabled"/>
+  <i key="emp::snd::layout_c.name::name" value="Name"/>
+  <i key="emp::snd::layout_c.instruments::name" value="Instruments"/>
+  <i key="ase::cor::mapping_c.name::name" value="Name"/>
+  <i key="ase::cor::mapping_c.mapping::name" value="Mapping"/>
+  <i key="ase::cor::option_shell_c.user::name" value="Player"/>
+  <i key="ase::cor::option_shell_c.options::name" value="Options"/>
+  <i key="ase::cor::option_s.evolution::name" value="evolution"/>
+  <i key="ase::cor::option_s.selection::name" value="selection"/>
+  <i key="ase::cor::option_s.emphase::name" value="emphase"/>
+  <i key="ase::cor::selection_option_s.pool::name" value="Pool"/>
+  <i key="ase::cor::selection_option_s.pools::name" value="Pools"/>
+  <i key="ase::cor::selection_option_s.gallery_width::name" value="Thumb Count"/>
+  <i key="ase::cor::selection_option_s.edition::name" value="Edition"/>
+  <i key="ase::cor::evolution_option_s.mutation::name" value="Mutation"/>
+  <i key="ase::cor::evolution_option_s.crossover::name" value="Crossover"/>
+  <i key="emp::ose::mutation_s.literal::name" value="Literal"/>
+  <i key="emp::ose::mutation_s.variant::name" value="Variant"/>
+  <i key="emp::ose::mutation_s.call::name" value="Call"/>
+  <i key="emp::ose::mutation_s.data::name" value="Data"/>
+  <i key="emp::ose::mutation_s.trailing::name" value="Trailing"/>
+  <i key="emp::ose::node_mutation_s.active::name" value="Enabled"/>
+  <i key="emp::ose::node_mutation_s.base::name" value="Base"/>
+  <i key="emp::ose::node_mutation_s.count::name" value="Count"/>
+  <i key="emp::ose::node_mutation_s.scale::name" value="Scale"/>
+  <i key="emp::ose::node_mutation_s.offset::name" value="Offset"/>
+  <i key="emp::ose::crossover_s.active::name" value="Enabled"/>
+  <i key="emp::ose::crossover_s.base::name" value="Base"/>
+  <i key="emp::ose::crossover_s.count::name" value="Count"/>
+  <i key="emp::ose::crossover_s.offset::name" value="Offset"/>
+  <i key="emp::ose::crossover_s.xmother::name" value="X Mother"/>
+  <i key="emp::ose::crossover_s.xfather::name" value="X Father"/>
+  <i key="ase::cor::pool_list_c.pools::name" value="Pools"/>
+  <i key="ase::cor::pool_c.name::name" value="Name"/>
+  <i key="ase::cor::pool_c.files::name" value="Files"/>
+  <i key="ase::cor::pool_c.id::name" value="Id"/>
+  <i key="ase::cor::emphase_option_s.mod::name" value="Game"/>
+  <i key="ase::cor::emphase_option_s.shuffle::name" value="Shuffle"/>
+  <i key="ase::cor::emphase_option_s.bpm::name" value="BPM"/>
+  <i key="ase::cor::emphase_option_s.score::name" value="Score"/>
+  <i key="ase::cor::emphase_option_s.keyboard::name" value="Keyboard"/>
+  <i key="ase::cor::score_option_s.visible::name" value="Visible"/>
+  <i key="ase::cor::score_option_s.letters::name" value="Letters"/>
+  <i key="ase::cor::score_option_s.durations::name" value="Durations"/>
+  <i key="ase::cor::score_option_s.scale::name" value="Size"/>
+  <i key="ase::cor::score_option_s.time_scale::name" value="Time Scale"/>
+  <i key="ase::cor::keyboard_option_s.visible::name" value="Visible"/>
+  <i key="ase::cor::keyboard_option_s.letters::name" value="Letters"/>
+  <i key="ase::cor::keyboard_option_s.scale::name" value="Size"/>
+  <i key="ase::cor::keyboard_option_s.mapping::name" value="Keyboard"/>
+  <i key="ase::cor::keyboard_option_s.layout::name" value="Instrument"/>
+  <i key="ase::cor::keyboard_option_s.snd_scale::name" value="Scale"/>
+  <i key="ase::cor::option_s.scaling::name" value="Texte Size"/>
+  <i key="ase::cor::option_s.skin::name" value="Skin"/>
+  <i key="ase::cor::option_s.locale::name" value="Language"/>
+  <i key="ase::cor::mod_e::Easy" value="Easy"/>
+  <i key="ase::cor::mod_e::Normal" value="Normal"/>
+  <i key="ase::cor::mod_e::Hard" value="Hard"/>
+  <i key="ase::cor::mod_e::Improvize" value="Improvize"/>
+  <i key="ase::cor::mod_e::Memorize" value="Memorize"/>
+  <i key="ase_cor_album" value="Playlists"/>
+  <i key="ase_cor_music_improvize" value="Improvisation"/>
+  <i key="ase_cor_music_title" value="Title"/>
+  <i key="ase_cor_music_duration" value="Duration"/>
+  <i key="ase_cor_music_beat_per_minute" value="BPM"/>
+  <i key="ase_cor_music_rating" value="Favorites"/>
+  <i key="ase_cor_music_played_count" value="Played"/>
+  <i key="ase_cor_music_user" value="Leader"/>
+  <i key="ase_cor_music_completion" value="Completion"/>
+  <i key="ase_cor_music_time" value="Time"/>
+  <i key="ase_cor_music_success" value="Success"/>
+  <i key="ase_cor_music_failure" value="Failure"/>
+  <i key="ase_mod_disclaimer_name" value="disclaimer"/>
+  <i key="ase_mod_title_name" value="rgen"/>
+  <i key="ase_mod_tuto_demo_name" value="10&#10;images&#10;here"/>
+  <i key="ase_mod_tuto_rgba_name" value="random&#10;image&#10;generator"/>
+  <i key="ase_mod_tuto_swipe_name" value="swipe,&#10;&#10;when you like an image !"/>
+  <i key="ase_mod_tuto_tap_name" value="tap,&#10;&#10;when you don't..."/>
+  <i key="ase_mod_emphase_name" value=".emphase."/>
+  <i key="ase_mod_evolution_name" value="evolution"/>
+  <i key="ase_mod_selection_name" value="selection"/>
+  <i key="ase_mod_rgen_name" value="rgen"/>
+  <i key="ase_mod_music_name" value="play"/>
+  <i key="ase_mod_improvize_name" value="improvize"/>
+  <i key="ase_mod_artwork_name" value="artwork"/>
+  <i key="ase_mod_synthesize_name" value="synthesize"/>
+  <i key="ase_mod_compose_name" value="sequence"/>
+  <i key="ase_mod_debug_name" value="debug"/>
+  <i key="ase_mod_preferences_name" value="preferences"/>
+  <i key="ase_mod_about_name" value="?"/>
+  <i key="ase_mod_select_dlg_exit" value="Do you really want to quit .emphase. ?"/>
+  <i key="ase_mod_music_dlg_start" value="Start playing ?"/>
+  <i key="ase_mod_music_dlg_stop" value="Rank"/>
+  <i key="ase_mod_music_show_my_scores" value="Only show my scores."/>
+  <i key="ase_mod_music_dlg_exit" value="Stop current performance ?"/>
+  <i key="ase_mod_music_dlg_pause" value="Resume game ?"/>
+  <i key="ase_cor_music_rank" value="#"/>
+  <i key="ase_mod_music_save_partition" value="Save music score."/>
+  <i key="emp::gui::graph_c.new_function" value="Function"/>
+  <i key="emp::gui::graph_c.new_scale" value="Scale"/>
+  <i key="emp::gui::graph_c.new_envelope" value="Envelope"/>
+  <i key="emp::gui::graph_c.new_spectrum" value="Spectrum"/>
+  <i key="emp::gui::graph_c.new_biquad" value="Biquad"/>
+  <i key="emp::gui::graph_c.new_delay" value="Delay"/>
+  <i key="emp::gui::graph_c.new_reverb" value="Reverb"/>
+  <i key="ase::gui::compose_c::on_new_composition" value="Add"/>
+  <i key="ase::gui::compose_c::on_rename_composition" value="Rename"/>
+  <i key="ase::gui::compose_c::on_remove_composition" value="Remove"/>
+  <i key="ase::gui::compose_c::on_new_track" value="+ Track"/>
+  <i key="ase::gui::compose_c::on_play_track" value="I&gt; Play"/>
+  <i key="ase::gui::compose_c::on_pause_track" value="II Pause"/>
+  <i key="ase::gui::compose_c::on_stop_track" value="O Stop"/>
+  <i key="ase::gui::synthesize_c::on_new_synth" value="New"/>
+  <i key="ase::gui::synthesize_c::on_rename_synth" value="Rename"/>
+  <i key="ase::gui::synthesize_c::on_remove_synth" value="Remove"/>
+ </strings>
+</__object>

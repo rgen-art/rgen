@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="ase::mod::emphase_c" duration="-1" next="ase_mod_improvize.xml" prev="">
+ <window>
+  <skin name="wnd.main"/>
+  <state visible="0" enable="0" hover="0" focus="0" select="0" check="0" navigable="0" focusable="0" renderable="1" index="0" dock="none">
+   <autosize x="0" y="0"/>
+  </state>
+  <controls __count="0"/>
+  <transform>
+   <position x="0" y="0"/>
+   <size x="2" y="2"/>
+  </transform>
+ </window>
+ <desc key="ase_mod_emphase_desc" value=""/>
+ <name key="ase_mod_emphase_name" value=""/>
+</__object>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::gui::manager_c">
+ <state visible="1" enable="1" hover="1" focus="0" select="0" check="0" navigable="0" focusable="0" renderable="1" index="4294967295" dock="none">
+  <autosize x="0" y="0"/>
+ </state>
+ <controls __count="7">
+  <i __type="emp::gui::window_c*">
+   <skin name="wnd.main"/>
+   <state visible="0" enable="0" hover="1" focus="0" select="0" check="0" navigable="0" focusable="0" renderable="1" index="0" dock="none">
+    <autosize x="0" y="0"/>
+   </state>
+   <controls __count="0"/>
+   <transform>
+    <position x="0" y="0"/>
+    <size x="2" y="2"/>
+   </transform>
+  </i>
+  <i __type="emp::gui::window_c*">
+   <skin name="wnd.main"/>
+   <state visible="0" enable="0" hover="1" focus="0" select="0" check="0" navigable="0" focusable="0" renderable="1" index="0" dock="none">
+    <autosize x="0" y="0"/>
+   </state>
+   <controls __count="0"/>
+   <transform>
+    <position x="0" y="0"/>
+    <size x="2" y="2"/>
+   </transform>
+  </i>
+  <i __type="emp::gui::window_c*">
+   <skin name="wnd.main"/>
+   <state visible="0" enable="0" hover="1" focus="0" select="0" check="0" navigable="0" focusable="0" renderable="1" index="0" dock="none">
+    <autosize x="0" y="0"/>
+   </state>
+   <controls __count="0"/>
+   <transform>
+    <position x="0" y="0"/>
+    <size x="2" y="2"/>
+   </transform>
+  </i>
+  <i __type="emp::gui::window_c*">
+   <skin name="wnd.main"/>
+   <state visible="0" enable="0" hover="1" focus="0" select="0" check="0" navigable="0" focusable="0" renderable="1" index="0" dock="none">
+    <autosize x="0" y="0"/>
+   </state>
+   <controls __count="0"/>
+   <transform>
+    <position x="0" y="0"/>
+    <size x="2" y="2"/>
+   </transform>
+  </i>
+  <i __type="emp::gui::window_c*">
+   <skin name="wnd.main"/>
+   <state visible="0" enable="0" hover="1" focus="0" select="0" check="0" navigable="0" focusable="0" renderable="1" index="0" dock="none">
+    <autosize x="0" y="0"/>
+   </state>
+   <controls __count="0"/>
+   <transform>
+    <position x="0" y="0"/>
+    <size x="2" y="2"/>
+   </transform>
+  </i>
+  <i __type="emp::gui::window_c*">
+   <skin name="wnd.main"/>
+   <state visible="0" enable="0" hover="1" focus="0" select="0" check="0" navigable="0" focusable="0" renderable="1" index="0" dock="none">
+    <autosize x="0" y="0"/>
+   </state>
+   <controls __count="0"/>
+   <transform>
+    <position x="0" y="0"/>
+    <size x="2" y="2"/>
+   </transform>
+  </i>
+  <i __type="emp::gui::window_c*">
+   <skin name="wnd.main"/>
+   <state visible="1" enable="1" hover="1" focus="0" select="0" check="0" navigable="0" focusable="0" renderable="1" index="0" dock="none">
+    <autosize x="0" y="0"/>
+   </state>
+   <controls __count="0"/>
+   <transform>
+    <position x="0" y="0"/>
+    <size x="2" y="2"/>
+   </transform>
+  </i>
+ </controls>
+ <transform>
+  <position x="-1" y="1"/>
+  <size x="0" y="0"/>
+ </transform>
+</__object>

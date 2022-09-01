@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<__object __type="emp::snd::composition_c" name="Mario Bros">
+ <tracks __count="1">
+  <i __pointer="emp_snd_track_mario_bros_00.xml"/>
+ </tracks>
+</__object>
